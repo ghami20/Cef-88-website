@@ -4,11 +4,13 @@ body {
     font-family: 'Segoe UI', Roboto, Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-image: linear-gradient(to bottom,rgb(40, 168, 243)0, #dcdce7);
+
 }
 
 header {
     height: 10%;
-    background-color: #007bff;
+    background-color: #001b389d;
     color: #ffffff;
     padding: 20px 40px; /* Aumenté el espaciado interno para mejorar la legibilidad */
     display: flex;
@@ -24,6 +26,7 @@ header {
     color: inherit; /* Hereda el color del texto del elemento padre */
     font-weight: inherit; /* Hereda el peso de la fuente del elemento padre */
     font-size: inherit; 
+    max-width: 150px;
 }
 #cef-icon h1:hover{
     color: #333333;
@@ -31,11 +34,14 @@ header {
 
 
 .header-left {
+    width: 50%;
     flex: 1;
     text-align: left;
 }
 
 .header-right {
+    width: 50%;
+
     text-align: right;
     padding-right: 5%;
 }
@@ -58,8 +64,7 @@ nav ul li a {
 main {
 
 }
-div{
-}
+
 
 section {
     background-color: #f0f0f0;
@@ -84,17 +89,21 @@ footer {
 #piePagina li{
     display: inline;
 }
-
+nav a.hover{
+    background-color: #007bff;
+}
 nav a.active {
     font-weight: bold;
-    color: #007bff;
-    background-color: #333333;
+    color: #dedede;
+    text-decoration: overline;
     border-radius: 10px ;
     padding: 5px;
+    box-shadow: 0 5px 10prgb(0, 0, 0, 0.1); 
 }
 #actividades , #inicio, #inscripcion,#contacto,#banner{
     margin: 100px;
     scroll-margin-top: 100px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); 
 }
 
 /* Estilos para el botón de menú */
@@ -103,21 +112,54 @@ nav a.active {
 }
 
 /* Estilos para el menú de navegación en dispositivos móviles */
+/* Estilos para el menú de navegación en dispositivos móviles */
+/* Estilos para el menú de navegación en dispositivos móviles */
 @media screen and (max-width: 768px) {
     .menu-btn {
+        width: 50px;
+        height: 50px;
         display: block; /* Muestra el botón de menú en dispositivos móviles */
+        float: right;
+        margin-right:50px ;
+       
     }
     
-    nav ul {
-        display: none; /* Oculta el menú de navegación por defecto en dispositivos móviles */
+        
+    #banner{
+        width: 65%;
     }
+    #imagenbanner{
+        width: 80%;
+    }
+    #menunav ul {
+        display: none;
+    }
+  
+    #menunav.show ul {
+        padding: 10px;
+        display: block;
+    }
+    .header-right {
+        width: 50%;
+        text-align: center;
+    }
+    #menunav li{
+        display:block;
+        
+       }
+       #menunav li a{
+        color: black;
+        font-size: large;
+       }
+       #menunav ul{
+        width: auto;
+       }
+    #menunav{
+        display: inline-block;
+        background-color: #f0f0f0;
+        width: 100%;
 
-    nav ul.show {
-        display: block; /* Muestra el menú de navegación al hacer clic en el botón de menú */
     }
-
-    nav ul li {
-        display: block; /* Muestra los elementos de la lista uno debajo del otro */
-        margin-bottom: 10px; /* Añade un espacio entre elementos */
-    }
+    
 }
+
