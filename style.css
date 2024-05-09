@@ -8,6 +8,8 @@ body {
 
 }
 
+
+
 header {
     height: 10%;
     background-color: #001b389d;
@@ -78,7 +80,10 @@ section {
     width: 100%;
 }
 #inicio{
-    height: 30%;
+    padding: 10px;
+    background-color:#f0f0f0; ;
+    height: 100%;
+    overflow: auto;
 }
 footer {
     background-color: #007bff;
@@ -104,13 +109,44 @@ nav a.active {
     margin: 100px;
     scroll-margin-top: 100px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); 
-}
 
+}
+.elementos{
+    border: #007bff;
+    border-style:solid ;
+    margin: 20px;
+    padding: 20px;
+    width: 350px;
+    height: 200px;
+    float: left;
+}
+.actividades{
+    width :90%;
+    height: 50%;
+    overflow:auto;
+}
+.activity{
+   float: left;
+   width: 300px;
+   padding: 5px;
+   height: 250px;
+   margin: 3px;
+   background-color: #007bff;
+   box-shadow: 5px 5px 10px grey;
+   border-radius: 10px;
+}
 /* Estilos para el botón de menú */
 .menu-btn {
     display: none; /* Oculta el botón de menú por defecto */
 }
+#actividadescontent:hover + #listaactividades {
+    visibility: visible;
+}
 
+/* Oculta la lista de actividades por defecto */
+#listaactividades {
+    visibility: hidden;
+}
 /* Estilos para el menú de navegación en dispositivos móviles */
 /* Estilos para el menú de navegación en dispositivos móviles */
 /* Estilos para el menú de navegación en dispositivos móviles */
