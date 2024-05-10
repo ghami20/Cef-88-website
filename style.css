@@ -157,12 +157,27 @@ nav a.active {
 /* Estilos generales para dispositivos de pantalla grande */
 
 @media screen and (max-width: 768px) {
+
+    .actividades{
+        border: #007bff;
+        border-style:solid ;
+        margin: 20px;
+        padding: 20px;
+        width: 90%;
+        height: 80%;
+        float: left;
+        border-radius: 10px;
+
+    }
     #actividades , #inicio, #inscripcion,#contacto,#banner{
         margin: 20px;
         scroll-margin-top: 80px;
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); 
+        border-radius: 10px;
+
     
     }
+    
     /* Estilos específicos para dispositivos móviles */
     /* Por ejemplo, aquí puedes colocar los estilos para el botón de menú, el menú desplegable, etc. */
     
