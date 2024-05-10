@@ -71,6 +71,7 @@ main {
 section {
     background-color: #f0f0f0;
     padding: 5%;
+    border-radius:10px ;
 }
 #banner{
 
@@ -154,20 +155,45 @@ nav a.active {
     display: none;
 }
 
+.actividadescontent{
+    color: wheat;
+    border-radius: 10px;
+    background-color: #333333;
+    padding: 5px;
+    text-decoration: none;
+}
+.actividadescontent a :hover {
+    border: black;
+    border-width: 3px;
+    
+}
+
 /* Estilos generales para dispositivos de pantalla grande */
 
 @media screen and (max-width: 768px) {
-
+    main {
+        margin-top: calc(25% + 30px); /* Calcula el margen superior con respecto a la altura del header */
+    }
     .actividades{
         border: #007bff;
         border-style:solid ;
-        margin: 20px;
-        padding: 20px;
+        margin: 10px;
+        padding: 10px;
         width: 90%;
         height: 80%;
         float: left;
         border-radius: 10px;
 
+    }
+    .elementos{
+        border: #007bff;
+        border-style:solid ;
+        margin: 5px;
+        padding: 5px;
+        width: 90%;
+        height: 80%;
+        float: left;
+        border-radius: 10px;
     }
     #actividades , #inicio, #inscripcion,#contacto,#banner{
         margin: 20px;
@@ -175,7 +201,6 @@ nav a.active {
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); 
         border-radius: 10px;
 
-    
     }
     
     /* Estilos específicos para dispositivos móviles */
