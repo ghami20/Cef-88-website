@@ -147,55 +147,38 @@ nav a.active {
 #listaactividades {
     visibility: hidden;
 }
-/* Estilos para el menú de navegación en dispositivos móviles */
-/* Estilos para el menú de navegación en dispositivos móviles */
-/* Estilos para el menú de navegación en dispositivos móviles */
-@media screen and (max-width: 768px) {
-    .menu-btn {
-        width: 50px;
-        height: 50px;
-        display: block; /* Muestra el botón de menú en dispositivos móviles */
-        float: right;
-        margin-right:50px ;
-       
-    }
-    
-        
-    #banner{
-        width: 65%;
-    }
-    #imagenbanner{
-        width: 80%;
-    }
-    #menunav ul {
-        display: none;
-    }
-  
-    #menunav.show ul {
-        padding: 10px;
-        display: block;
-    }
-    .header-right {
-        width: 50%;
-        text-align: center;
-    }
-    #menunav li{
-        display:block;
-        
-       }
-       #menunav li a{
-        color: black;
-        font-size: large;
-       }
-       #menunav ul{
-        width: auto;
-       }
-    #menunav{
-        display: inline-block;
-        background-color: #f0f0f0;
-        width: 100%;
-
-    }
-    
+.menu-btn {
+    display: none; /* Oculta el botón de menú por defecto */
+}
+#menu-toggle{
+    display: none;
 }
 
+/* Estilos generales para dispositivos de pantalla grande */
+
+@media screen and (max-width: 768px) {
+    /* Estilos específicos para dispositivos móviles */
+    /* Por ejemplo, aquí puedes colocar los estilos para el botón de menú, el menú desplegable, etc. */
+    
+    #menu-toggle {
+        display: none; /* Oculta el checkbox en dispositivos móviles */
+    }
+
+    .menu-btn {
+        display: inline-block; /* Asegura que la etiqueta se muestre como un bloque */
+        cursor: pointer; /* Cambia el cursor a una mano al pasar sobre el botón de menú */
+    }
+
+    #menunav {
+        
+        display: none; /* Oculta el menú por defecto en dispositivos móviles */
+    }
+
+    #menu-toggle:checked + #menunav {
+        background-color: aliceblue;
+
+        display: block; /* Muestra el menú cuando el checkbox está seleccionado */
+    }
+
+    /* Otros estilos específicos para dispositivos móviles */
+}

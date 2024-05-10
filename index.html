@@ -10,11 +10,11 @@
 <body>
     <header>
         <div class="header-left">
-            <a href="index.html" id="cef-icon"><h1>CEF 88</h1></a>
+            <a href="index.html" id="cef-icon"><h1> CEF 88 </h1></a>
         </div>
         <div class="header-right">
-            <button onclick="verMenu()" class="menu-btn"><img width="50px" height="50px" src="menu.png" alt="menu"></button> <!-- Botón de menú -->
-    
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-btn"><img width="50px" height="50px" src="menu.png" alt="menu"></label>    
             <nav id="menunav">
                 <ul>
                     <li><a href="#inicio">Inicio</a></li>
@@ -25,29 +25,9 @@
             </nav>
         </div>
     </header>
-   <script>
-    document.querySelector('.menu-btn').addEventListener('click', function() {
-    document.querySelector('nav').classList.toggle('show');
-});
-
-const links = document.querySelectorAll('nav a');
-
-function setActiveLink(event) {
-    // Eliminar la clase "active" de todos los enlaces
-    links.forEach(link => link.classList.remove('active'));
-    // Agregar la clase "active" al enlace seleccionado
-    event.target.classList.add('active');
-}
-
-// Escuchar el evento de clic en cada enlace y llamar a la función setActiveLink
-links.forEach(link => {
-    link.addEventListener('click', setActiveLink);
-});
-
-   </script>
     <main> 
         <div id="inicio">
-            <section >
+            <section>
                 <div class="elementos">
                     <h2>Inicio</h2>
                     <p>Bienvenidos al Centro de Educación Física CEF 88. Nuestro objetivo es promover la actividad física y el bienestar de nuestros alumnos.</p>
@@ -58,8 +38,7 @@ links.forEach(link => {
             </section>
         </div>
         <div id="actividades">
-
-            <section >
+            <section>
                 <h2>Actividades</h2>
                 <h3>Horarios de Clases</h3>
                 <p>Ofrecemos una variedad de actividades físicas para todas las edades, incluyendo:</p>
@@ -72,7 +51,6 @@ links.forEach(link => {
             </section>
         </div>
         <div  id="inscripcion">
-
             <section>
                 <h2>Inscripción</h2>
                 <p>Para inscribirte en nuestras actividades, por favor contáctanos a través de nuestro formulario de contacto o visítanos en nuestro centro.</p>
@@ -80,8 +58,7 @@ links.forEach(link => {
             </section>
         </div>
         <div id="contacto">
-
-            <section >
+            <section>
                 <h2>Contacto</h2>
                 <p>Puedes encontrarnos en:</p>
                 <address>
@@ -92,9 +69,9 @@ links.forEach(link => {
                 </address>
             </section>
         </div>
-        </main>
-        <footer >
-            <p>CEF 88 &copy; 2024 - Todos los derechos reservados</p>
+    </main>
+    <footer>
+        <p>CEF 88 &copy; 2024 - Todos los derechos reservados</p>
         <ul id="piePagina">
             <li><a href="https://www.instagram.com/cef88_spegazzini/" target="_blank">Instagram</a></li>
             <li><a href="#contacto">Contacto</a></li>
