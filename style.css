@@ -145,7 +145,18 @@ nav a.active {
 
 
 }
-
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: #f2f2f2;
+}
 /* Oculta la lista de actividades por defecto */
 #listaactividades {
     visibility: hidden;
