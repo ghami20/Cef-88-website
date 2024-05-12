@@ -142,11 +142,14 @@ nav a.active {
 }
 #actividadescontent:hover + #listaactividades {
     visibility: visible;
+
+
 }
 
 /* Oculta la lista de actividades por defecto */
 #listaactividades {
     visibility: hidden;
+    transition-duration: 2s;
 }
 .menu-btn {
     display: none; /* Oculta el botón de menú por defecto */
@@ -161,6 +164,7 @@ nav a.active {
     background-color: #333333;
     padding: 5px;
     text-decoration: none;
+    transition: duration 2s; ;
 }
 .actividadescontent a :hover {
     border: black;
